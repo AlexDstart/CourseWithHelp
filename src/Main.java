@@ -53,7 +53,7 @@ public class Main {
     }
 
     public static void minSalary(Employee[] empl){
-        int minSalary = 20_000;
+        int minSalary = empl[0].getSalary();
         String minEmpl = "";
         for (int i =0; i< empl.length; i++){
             if (empl[i].getSalary() < minSalary){

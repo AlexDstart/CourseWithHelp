@@ -4,7 +4,9 @@ public class Employee {
     private String name;
     private int department;
     private int salary;
-    private static int id;
+    private  int id;
+    private static int counter=0;
+
 
 
 
@@ -41,11 +43,12 @@ public class Employee {
         this.name = name;
         this.department = dept;
         this.salary = salary;
+        this.id=counter++;
         id++;
     }
 
     @Override
     public String toString() {
-        return "ФИО: " + name + " Отдел: " + department + " Зарплата: " + salary;
+        return "ФИО: " + name + " Отдел: " + department + " Зарплата: " + salary+" Id сотрудника "+id;
     }
 }
